@@ -126,36 +126,36 @@
 
 :root {
   --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-border: #D4C4A8;
-  --color-dark-1: #3D2914;
-  --color-dark-2: #5C3A1F;
-  --color-dark-3: #7A4B2A;
-  --color-dark-4: #8B5A35;
-  --color-light-1: #8B7355;
-  --color-light-2: #F7F3E9;
-  --color-light-3: #FDFCF8;
-  --color-blue-1: #6B8E5A;
-  --color-blue-2: #F0F4ED;
-  --color-green-1: #E8F0E3;
-  --color-green-2: #4A6741;
-  --color-yellow-1: #F4E6A3;
-  --color-yellow-2: #E6D18A;
-  --color-yellow-3: #D4C078;
-  --color-yellow-4: #FDF9E7;
-  --color-brown-1: #8B4513;
-  --color-purple-1: #6B8E5A;
-  --color-red-1: #A0522D;
-  --color-red-2: #CD853F;
-  --color-red-3: #FDF5E6;
-  --color-info-1: #E8F0E3;
-  --color-info-2: #4A6741;
-  --color-warning-1: #F4E6A3;
-  --color-warning-2: #8B7355;
-  --color-error-1: #F5D5C5;
-  --color-error-2: #A0522D;
-  --color-success-1: #E8F0E3;
-  --color-success-2: #4A6741;
+  --color-black: #1D0602;
+  --color-border: #708591;
+  --color-dark-1: #1D0602;
+  --color-dark-2: #2A0703;
+  --color-dark-3: #380904;
+  --color-dark-4: #450B05;
+  --color-light-1: #708591;
+  --color-light-2: #DFE0E0;
+  --color-light-3: #F5F5F5;
+  --color-blue-1: #085025;
+  --color-blue-2: #E8F5EC;
+  --color-green-1: #E8F5EC;
+  --color-green-2: #085025;
+  --color-yellow-1: #FFCF2A;
+  --color-yellow-2: #FFD84D;
+  --color-yellow-3: #FFE066;
+  --color-yellow-4: #FFF9E6;
+  --color-brown-1: #1D0602;
+  --color-purple-1: #085025;
+  --color-red-1: #380904;
+  --color-red-2: #450B05;
+  --color-red-3: #FFF2F0;
+  --color-info-1: #E8F5EC;
+  --color-info-2: #085025;
+  --color-warning-1: #FFF9E6;
+  --color-warning-2: #FFCF2A;
+  --color-error-1: #FFF2F0;
+  --color-error-2: #380904;
+  --color-success-1: #E8F5EC;
+  --color-success-2: #085025;
 }
 
 [data-anim-wrap] {
@@ -553,8 +553,8 @@ body {
   padding: 0;
   font-family: var(--font-primary);
   width: 100%;
-  background-color: white;
-  color: var(--color-dark-1);
+  background-color: var(--color-dark-1);
+  color: var(--color-light-2);
   font-size: 16px;
   line-height: 1.875;
 }
@@ -8582,7 +8582,7 @@ div[data-slider] > input[type=range]::-ms-tooltip {
 
 .y-gap-30 {
   margin-top: -15px;
-  margin-bottom: -15px;
+  margin-bottom: 80px;
 }
 
 .y-gap-30 > * {
@@ -12143,4 +12143,88 @@ table.table-5 td {
   height: 100%;
   background-color: var(--color-light-2);
   z-index: -2;
+}
+
+/* Custom Grandma's Hand Color Enhancements */
+.section-bg {
+  background-color: var(--color-light-2) !important;
+}
+
+/* Enhanced button styles with golden yellow accent */
+.button {
+  background-color: var(--color-yellow-1);
+  color: var(--color-dark-1);
+  border-color: var(--color-yellow-1);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-yellow-2);
+  border-color: var(--color-yellow-2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 207, 42, 0.3);
+}
+
+/* Special accent for primary buttons */
+.button.-md {
+  background-color: var(--color-yellow-1);
+  color: var(--color-dark-1);
+  font-weight: 600;
+}
+
+/* Card styling with proper contrast */
+.bg-white {
+  background-color: var(--color-light-2) !important;
+  color: var(--color-dark-1);
+  border: 1px solid var(--color-border);
+}
+
+/* Enhanced navigation and header styling */
+.header {
+  background-color: var(--color-dark-1);
+  border-bottom: 2px solid var(--color-yellow-1);
+}
+
+/* Text color overrides for better readability */
+.text-dark-1 {
+  color: var(--color-dark-1) !important;
+}
+
+/* Footer styling */
+.footer {
+  background-color: var(--color-dark-2) !important;
+  color: var(--color-light-2);
+  border-top: 3px solid var(--color-yellow-1);
+}
+
+/* Links and interactive elements */
+a {
+  color: var(--color-blue-1);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-yellow-1);
+}
+
+/* Special styling for testimonials and key sections */
+.testimonials {
+  background-color: var(--color-light-2);
+  border-left: 4px solid var(--color-yellow-1);
+}
+
+/* Enhanced border styling */
+.border-top-light,
+.border-bottom-light {
+  border-color: var(--color-border) !important;
+}
+
+/* Icon styling with accent colors */
+.icon {
+  color: var(--color-blue-1);
+}
+
+.icon:hover {
+  color: var(--color-yellow-1);
 }
